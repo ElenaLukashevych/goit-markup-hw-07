@@ -574,7 +574,6 @@ header {
   border-radius: 50%;
 }
 
-
 .footer__form {
   display: flex;
 }
@@ -665,6 +664,7 @@ header {
 }
 
 .projects__item {
+
   margin-top: var(--item-gap);
   margin-left: var(--item-gap);
 
@@ -690,9 +690,9 @@ header {
 
 .projects__overlay {
   position: absolute;
+
   font-size: 18px;
   line-height: 1.56;
-
   letter-spacing: 0.03em;
 
   color: var(--primary-white-color);
@@ -703,11 +703,11 @@ header {
 
   padding: 63px 24px;
 
-  height: 101%;
+  height: 100%;
   width: 100%;
 
-top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
   transform: translateY(100%);
 
   transition: transform var(--duration) var(--cubic);
@@ -850,7 +850,6 @@ top: 0;
 .form__field:focus-within .form__icon {
   fill: var(--accent-color);
 }
-
 
 .form__input {
   margin-top: 4px;
