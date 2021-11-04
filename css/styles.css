@@ -706,8 +706,8 @@ header {
   height: 100%;
   width: 100%;
 
-  bottom: 0;
-
+top: 0;
+    left: 0;
   transform: translateY(100%);
 
   transition: transform var(--duration) var(--cubic);
