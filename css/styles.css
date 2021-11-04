@@ -706,9 +706,6 @@ header {
   height: 100%;
   width: 100%;
 
-  bottom: 0;
-      overflow: auto;
-
   transform: translateY(100%);
 
   transition: transform var(--duration) var(--cubic);
