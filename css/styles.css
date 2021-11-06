@@ -310,7 +310,6 @@ header {
 
 /* Примеры работ */
 
-
 .examples {
   display: flex;
 
@@ -496,7 +495,6 @@ header {
 
 .logo__item {
   margin-bottom: 20px;
-
 }
 
 .address {
@@ -666,7 +664,6 @@ header {
 }
 
 .projects__item {
-
   margin-top: var(--item-gap);
   margin-left: var(--item-gap);
 

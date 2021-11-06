@@ -6,27 +6,6 @@ header {
   display: flex;
 }
 
-.logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  cursor: pointer;
-
-  color: $accent-color;
-}
-
-.site-nav__logo {
-  margin-right: 93px;
-}
-
-.site-nav__logo--black {
-  color: #000000;
-}
-
 .site-nav,
 .nav {
   display: flex;
@@ -51,9 +30,10 @@ header {
 
   transition: color $duration $cubic, fill $duration $cubic;
 
-  &:hover, :focus {
-      color: $accent-color;
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
   }
 }
 
@@ -68,7 +48,7 @@ header {
 }
 
 .contacts__link {
-@include centeredFlex;
+  @include centeredFlex;
 
   color: $primary-text-color;
   fill: $primary-text-color;
@@ -83,18 +63,18 @@ header {
 .nav__link--current {
   color: $accent-color;
   position: relative;
-}
 
-.nav__link--current::after {
-  position: absolute;
-  display: block;
-  content: '';
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
 
-  width: 100%;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
 
-  background: $accent-color;
-  border-radius: 2px;
+    background: $accent-color;
+    border-radius: 2px;
+  }
 }
