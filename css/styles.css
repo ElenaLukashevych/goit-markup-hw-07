@@ -310,9 +310,7 @@ header {
 
 /* Примеры работ */
 
-.examples__section {
-  padding-bottom: 0px;
-}
+
 .examples {
   display: flex;
 
@@ -489,12 +487,16 @@ header {
 
 .footer__logo {
   display: block;
-  margin-bottom: 20px;
   padding: 0;
 }
 
 .footer__logo--white {
   color: var(--primary-white-color);
+}
+
+.logo__item {
+  margin-bottom: 20px;
+
 }
 
 .address {
