@@ -6,8 +6,6 @@ header {
   display: flex;
 }
 
-
-
 .site-nav,
 .nav {
   display: flex;
@@ -31,14 +29,12 @@ header {
   color: $title-text-color;
 
   transition: color $duration $cubic, fill $duration $cubic;
-}
 
-.nav__link:hover,
-.nav__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .contacts {
@@ -52,11 +48,10 @@ header {
 }
 
 .contacts__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  @include centeredFlex;
+
+  color: $primary-text-color;
+  fill: $primary-text-color;
 }
 
 .contacts__icon {
@@ -66,20 +61,20 @@ header {
 }
 
 .nav__link--current {
-  color: var(--accent-color);
+  color: $accent-color;
   position: relative;
-}
 
-.nav__link--current::after {
-  position: absolute;
-  display: block;
-  content: '';
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
 
-  width: 100%;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
 
-  background: var(--accent-color);
-  border-radius: 2px;
+    background: $accent-color;
+    border-radius: 2px;
+  }
 }
