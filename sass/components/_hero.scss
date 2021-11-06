@@ -52,8 +52,9 @@
 
   transition: background-color $duration $cubic, box-shadow $duration $cubic;
 
-  &:hover,
-  &:focus {
-    background-color: $button-hover;
-  }
+ &:hover, &:focus {
+  background-color: $button-hover;
 }
+
+}
+

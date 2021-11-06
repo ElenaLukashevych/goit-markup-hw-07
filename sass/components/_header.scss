@@ -6,6 +6,7 @@ header {
   display: flex;
 }
 
+
 .site-nav,
 .nav {
   display: flex;
@@ -26,16 +27,17 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: $title-text-color;
+  color:$title-text-color;
 
-  transition: color $duration $cubic, fill $duration $cubic;
+  transition: $duration $cubic, fill $duration $cubic;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    fill: $accent-color;
-  }
+  &:hover, &:focus {
+  color:$accent-color;
+  fill: $accent-color;
 }
+}
+
+
 
 .contacts {
   display: flex;
@@ -65,16 +67,18 @@ header {
   position: relative;
 
   &::after {
-    position: absolute;
-    display: block;
-    content: '';
+  position: absolute;
+  display: block;
+  content: '';
 
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
 
-    background: $accent-color;
-    border-radius: 2px;
-  }
+  background: $accent-color;
+  border-radius: 2px;
 }
+}
+
+
