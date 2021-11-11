@@ -20,7 +20,7 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.section__title--visually-hidden, .checkbox__input--visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;

@@ -52,11 +52,11 @@
   transform: translateY(100%);
 
   transition: transform $duration $cubic;
+
+.projects__link:hover &, .projects__link:focus & {
+  transform: translateY(0%);
 }
 
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
-  transform: translateY(0%);
 }
 
 .projects__box {

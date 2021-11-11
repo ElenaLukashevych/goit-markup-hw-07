@@ -2,15 +2,7 @@
   padding-bottom: 0px;
 }
 
-.section__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 
-  color: $title-text-color;
-}
 
 .features {
   display: flex;
@@ -26,7 +18,7 @@
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.thumb {
+.features__thumb {
  @include centeredFlex;
 
   width: 270px;

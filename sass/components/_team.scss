@@ -49,11 +49,12 @@
 .social {
   display: flex;
   justify-content: center;
-}
 
-.social:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 10px;
 }
+}
+
 
 .social__link {
   @include centeredFlex;

@@ -3,13 +3,12 @@
   justify-content: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__item {
-  display: flex;
   justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
@@ -24,10 +23,10 @@
   fill: $svg-start-color;
 
   transition: fill $duration $cubic, border $duration $cubic;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid $accent-color;
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 }
